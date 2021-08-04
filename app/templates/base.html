@@ -1,0 +1,21 @@
+﻿{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {% if title %}{{ title }}{% else %}Nicholas Hadiwijaya - Portfolio{% endif %}
+{% endblock %}
+
+{% block navbar %}
+     <nav class="navbar navbar-default">
+          <div class="container">
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                         <li><a href="{{ url_for('home') }}">Home</a></li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+{% endblock %}
+
+{% block content %}
+     {% block app_content %}{% endblock %}
+{% endblock %}
